@@ -21,7 +21,7 @@ import "fmt"
 
 func main()  {
 	
-	isLower := Is.Lowercase("Test")
-	fmt.Println(isLower)
+	isCap := Is.Capitalized("This Is Test Input")
+	fmt.Println(isCap)
 }
 ```
