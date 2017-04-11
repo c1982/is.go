@@ -50,3 +50,8 @@ func Palindrome(input string) bool {
 	}
 	return true
 }
+
+//Include is a given string include parameter target?
+func Include(input, target string) bool  {
+	return strings.Index(input, target) != -1
+}

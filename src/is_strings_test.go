@@ -59,3 +59,17 @@ func TestPalindrome(t *testing.T){
 		t.Error("It's not realy palindrome")
 	}
 }
+
+func TestInclude(t *testing.T){
+	message := Is.Include("Follow the white rabbit","white")
+
+	if !message{
+		t.Error("white not included")
+	}
+
+	message = Is.Include("Choose your destiny","white")
+
+	if message {
+		t.Error("white is included")
+	}
+}

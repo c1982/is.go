@@ -8,10 +8,6 @@ Micro check library for Go inspired by [Is.js](https://github.com/arasatasaygin/
 go get github.com/c1982/is.go
 ```
 
-
-String checks
-===========
-
 ```Go
 package main
 
@@ -24,4 +20,22 @@ func main()  {
 	isCap := Is.Capitalized("This Is Test Input")
 	fmt.Println(isCap)
 }
+```
+
+Checks
+===========
+
+```Go
+Is.Lowercase("lower case text")
+-> true
+```
+
+```Go
+Is.Uppercase("UPPER TEXT")
+-> true
+```
+
+```Go
+Is.EndWith("bloket.pro",".pro")
+-> true
 ```
